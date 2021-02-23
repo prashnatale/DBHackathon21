@@ -1,12 +1,52 @@
 .App {
-    text-align: center;
-    border: red solid 1px;
-    background-color: black;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-  }
+    height: 1000px;
+}
 
-  .App-link {
-    color: #61dafb;
-  }
+.dbAssistToolbar {
+    width: 90% !important;
+    height: 50px !important;
+    position: sticky !important;
+    margin: 0 auto !important;
+    border-radius: 5px !important;
+    border: #5c5b5b solid 1px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 15px !important;
+    background-color: #fdfdfd !important;
+    top: 10px !important;
+    padding: 15px !important;
+    z-index: 999999;
+    transform: translateY(-10px) !important;
+    -ms-transform: translateY(-10px) !important;
+    -webkit-transform: translateY(-10px) !important;
+}
+
+    .dbAssistToolbar a {
+        text-decoration: none !important;
+        padding: 0 3px;
+        border-radius: 3px;
+        cursor: pointer;
+        border: #585858 solid 1px;
+        color: rgb(73, 129, 175);
+        margin: 0 2px;
+    }
+
+        .dbAssistToolbar a:hover {
+            color: orange;
+        }
+
+.current {
+    color: orange !important;
+    cursor: text !important;
+}
+
+.class1em {
+    font-size: 1em;
+}
+
+.class12em {
+    font-size: 1.25em;
+}
+
+.class17em {
+    font-size: 1.7em;
+}
