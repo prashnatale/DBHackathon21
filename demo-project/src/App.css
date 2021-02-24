@@ -1,7 +1,26 @@
-/* .App {
+.App {
     height: 1000px;
+}
+/* .dbAssistToolbar {
+    width: 90% !important;
+    height: 50px !important;
+    position: sticky !important;
+    margin: 0 auto !important;
+    border-radius: 5px !important;
+    border: #5c5b5b solid 1px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 15px !important;
+    background-color: #fdfdfd !important;
+    top: auto !important;
+    bottom: calc(90% - 50px) 0px !important;
+    padding: 15px !important;
+    z-index: 999999;
+    transform: translateY(-10px) !important;
+    -ms-transform: translateY(-10px) !important;
+    -webkit-transform: translateY(-10px) !important;
 } */
 
+/* 
 .dbAssistToolbar {
     width: 90% !important;
     height: 50px !important;
@@ -49,4 +68,4 @@
 
 .class17em {
     font-size: 1.7em;
-}
+} */
