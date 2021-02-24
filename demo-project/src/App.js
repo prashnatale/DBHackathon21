@@ -23,23 +23,48 @@ function App() {
       <h4>This is h4 text</h4>
 
 
-
+      {/* <a id="linkReadGuide" href="#" className="readGuide" onClick={() => toggleReaderGuide1()}>Reader Guide</a> */}
     </div>
   );
 }
 
-function handleClick(i) {
-  document.body.classList.remove('class1em');
-  document.body.classList.remove('class12em');
-  document.body.classList.remove('class17em');
+// function handleClick(i) {
+//   document.body.classList.remove('class1em');
+//   document.body.classList.remove('class12em');
+//   document.body.classList.remove('class17em');
 
 
-  document.getElementById("link1em").classList.remove('current');
-  document.getElementById("link12em").classList.remove('current');
-  document.getElementById("link17em").classList.remove('current');
+//   document.getElementById("link1em").classList.remove('current');
+//   document.getElementById("link12em").classList.remove('current');
+//   document.getElementById("link17em").classList.remove('current');
 
-  document.body.classList.add(document.getElementById(i).className);
-  document.getElementById(i).classList.add('current');
-}
+//   document.body.classList.add(document.getElementById(i).className);
+//   document.getElementById(i).classList.add('current');
+// }
+
+// function toggleReaderGuide1() {
+//   if (document.getElementById('readerGuide') != undefined) {
+//     document.body.removeChild(document.getElementById('readerGuide'))
+//   }
+//   else {
+//     var node = document.createElement("div");
+//     node.className = "readerGuide";
+//     node.id = "readerGuide";
+//     var event = event || window.event;
+//     node.style.top = (event.clientY + 10) + 'px';
+//     console.log(event.clientY)
+//     document.body.appendChild(node);
+//     document.body.addEventListener("mousemove", mouseMovement);
+//   }
+// }
+
+
+// function mouseMovement(event) {
+//   event = event || window.event;
+//   var readerGuide = document.getElementById('readerGuide');
+//   if (readerGuide) {
+//     readerGuide.style.top = (event.clientY + 10) + 'px';
+//   }
+// }
 
 export default App;

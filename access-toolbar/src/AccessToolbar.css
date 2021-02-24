@@ -50,3 +50,17 @@
 .class17em {
     font-size: 1.7em;
 }
+
+.readingGuide{
+    box-sizing: border-box;
+    background: #000;
+    width: 99%!important;
+    min-width: 99%!important;
+    position: fixed !important;
+    height: 12px!important;
+    border: solid 3px #fff300;
+    border-radius: 5px;
+    top: 20px;
+    left: 0;
+    z-index: 2147483647;
+}
