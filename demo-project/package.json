@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
     "accesstoolbar-hackathon-demo": "file:../access-toolbar/accesstoolbar-hackathon-demo-0.1.1.tgz",
+    "google-tts-api": "^2.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",

@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import * as googleTTS from 'google-tts-api';
 import './App.css';
 import AccessToolbar from 'accesstoolbar-hackathon-demo/lib/AccessToolbar'
 
@@ -21,11 +22,50 @@ function App() {
       <h2>This is h2 text</h2>
       <h3>This is h3 text</h3>
       <h4>This is h4 text</h4>
+      <a href="#" onClick={() => textToSpeech1()}>Speech-To-Text</a>
 
+      <audio className="audio-element">
+        <source src=""></source>
+      </audio>
+      <a href="#" onClick={() => textToSpeech2()}>Speech-To-Text1</a>
+      <br></br>
+      <audio className="audio-element1">
+        <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=Text-To-SpeechSpeech-To-TextAAAReading%20Guide%0A%0AThis%20is%20plain%20text%0A%0AThis%20is%20h1%20text%0AThis%20is%20h2%20text%0AThis%20is%20h3%20text%0AThis%20is%20h4%20text%0ASpeech-To-Text&tl=en-US&total=1&idx=0&textlen=144&client=tw-ob&prev=input&ttsspeed=1"></source>
+      </audio>
 
       {/* <a id="linkReadGuide" href="#" className="readGuide" onClick={() => toggleReaderGuide1()}>Reader Guide</a> */}
     </div>
   );
+}
+
+function textToSpeech1() {
+  var s = googleTTS.getAudioUrl(document.body.innerText);
+  console.log(s)
+  const audioEl = document.getElementsByClassName("audio-element")[0]
+
+  console.log(audioEl.source)
+
+  audioEl.source = s;
+  console.log(audioEl.source)
+
+  audioEl.play()
+
+
+  const audioEl1 = document.getElementsByClassName("audio-element1")[0]
+  audioEl1.play();
+
+  //var node = document.createElement("audio");
+  // node.
+}
+
+function textToSpeech2() {
+
+
+  const audioEl1 = document.getElementsByClassName("audio-element1")[0]
+  audioEl1.play();
+
+  //var node = document.createElement("audio");
+  // node.
 }
 
 // function handleClick(i) {
